@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="normalize.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <section class="box">
+    <div class="balance">
+      <div class="balance__total">
+        <p class="balance__text">My balance</p>
+        <p class="balance__amount">$921.48</p>
+      </div>
+      <div class="balance__logo"><img src="images/logo.svg" alt="logo"></div>
+    </div>
+    <div class="chart__box">
+
+      <div class="chart__tittle"><h2>Spending - Last 7 days</h2></div>
+      <div class="chart">
+        <canvas id="Chart"></canvas>
+      </div>
+      
+      <div class="total">
+        <div class="total__amount">
+          <p class="total__text">Total this month</p>
+          <p class="total__money">$478.33</p>
+        </div>
+        <div class="month">
+          <p class="month__percentage">+2.4%</p>
+          <p class="month__text">from last month</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+ 
+
+
+
+
+
+
+  
+</body>
+</html>

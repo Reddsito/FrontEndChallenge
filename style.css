@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+--Softred: rgb(236, 119, 95);
+--Cyan: rgb(118, 181, 188);
+--Darkbrown: rgb(56, 35, 20);
+--Mediumbrown: #93867b;
+--Cream: #f8e9dd;
+--Verypaleorange: #fffaf5;
+}
+
+.box {
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    min-width: 375px;
+    margin: 10px;
+    
+}
+
+.balance {
+    background-color: var(--Softred);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    color: var(--Verypaleorange);
+
+}
+
+.balance__text {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.balance__amount {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.chart__box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Verypaleorange);
+    border-radius: 15px;
+}
+
+.chart__tittle {
+    font-size: 20px;
+    color: var(--Darkbrown);
+    padding: 30px;
+    font-weight: 700;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    color: var(--Darkbrown);
+}
+
+.total__text {
+    color: var(--Mediumbrown);
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.total__money {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.month__percentage {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.month__text {
+    color: var(--Mediumbrown);
+}
+
