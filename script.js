@@ -6,7 +6,6 @@ async function getDays() {
     const bg = createBg(post);
     crearChart(post,bg);
 
-
     
 }
 function crearChart(labels,bgColorAndHover) {
@@ -75,31 +74,20 @@ function crearChart(labels,bgColorAndHover) {
 
 function createBg(post) {
 
-  let maxValue = 0;
-  let aux = 0;
   let backGroundArr = [];
   let backGroundHoverArr = [];
-
-  for (let i = 0; i < post.length; i++) {
-    if(post[i].amount > aux) {
-      aux = post[i].amount;
-      maxValue = i;
-    }
-}
+  const today = new Date();
+  const dayActual = new Date(today).getDay();
 
 for (let i = 0; i < post.length; i++){
-  if(i == maxValue) {
+  if(i == dayActual-1) {
     backGroundArr.push('rgb(118, 181, 188)');
     backGroundHoverArr.push('rgb(118, 181, 188, .5)');
   } else {
     backGroundArr.push('rgb(236, 119, 95)');
     backGroundHoverArr.push('rgb(236, 119, 95, .55)');
   }
-
-
-
 }
-
 return [backGroundArr,backGroundHoverArr ];
 }
 getDays();
