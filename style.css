@@ -1,100 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+--White: hsl(0, 0%, 100%);
+--LightGrey: #959eac;
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: #1b2229;
+--VeryDarkBlue: hsl(216, 12%, 8%);
+--Orange: hsl(25, 97%, 53%);
+--Grey: #262b35;
+}
 
 body {
     width: 100%;
     height: 100vh;
-    font-family: 'DM Sans', sans-serif;
-    background-color: var(--Cream);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-:root {
---Softred: rgb(236, 119, 95);
---Cyan: rgb(118, 181, 188);
---Darkbrown: rgb(56, 35, 20);
---Mediumbrown: #93867b;
---Cream: #f8e9dd;
---Verypaleorange: #fffaf5;
+    background-color: var(--VeryDarkBlue);
 }
 
 .box {
-    background-color: var(--Cream);
+    background-color: var(--DarkBlue);
+    width: 400px;
     display: flex;
     flex-direction: column;
-    width: 500px;
-    min-width: 375px;
-    margin: 10px;
-    
-}
-
-.balance {
-    background-color: var(--Softred);
-    margin-bottom: 20px;
-    border-radius: 15px;
-    display: flex;
     padding: 30px;
-    justify-content: space-between;
-    color: var(--Verypaleorange);
-
+    color: var(--White);
+    border-radius: 20px;
 }
 
-.balance__text {
-    font-weight: 400;
-    margin-bottom: 10px;
+.box__img img{
+    padding: 15px;
+    background-color: var(--Grey);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px 0px;
+    margin-bottom: 30px;
 }
 
-.balance__amount {
+.box__text h2{
+    margin-bottom: 15px;
+    letter-spacing: 2px;
     font-size: 30px;
     font-weight: 700;
+    color: var(--White);
 }
 
-.chart__box {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--Verypaleorange);
-    border-radius: 15px;
+.box__text p {
+    color: var(--MediumGrey);
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
-
-.chart__tittle {
-    font-size: 20px;
-    color: var(--Darkbrown);
-    padding: 30px;
-    font-weight: 700;
-}
-
-.total {
+.box__inputs {
     display: flex;
     justify-content: space-between;
-    padding: 35px;
-    color: var(--Darkbrown);
+    margin-bottom: 35px;
+
+    text-align: center;
+   
 }
 
-.total__text {
-    color: var(--Mediumbrown);
-    font-weight: 400;
-    margin-bottom: 6px;
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--Grey);
+    transition: ease .2s;
+}
+.box__inputs .inputs {
+    display: none;
 }
 
-.total__money {
-    font-size: 40px;
+.box__inputs .label {
+    color: var(--LightGrey);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.placeholder:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.placeholder:hover > .label {
+    color: var(--White);
+}
+
+.--active {
+    background-color: var(--LightGrey);
+}
+.--active .label {
+    color: var(--White);
+}
+.--active:hover {
+    background-color: var(--LightGrey);
+}
+
+.box__button button{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    letter-spacing: 2px;
     font-weight: 700;
+    transition: ease .2s;
 }
 
-.month {
+.box__button button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+
+
+.box__thenVote {
+   display: none;
+   flex-direction: column;
+   align-items: center;
+}
+.thenVote--img {
+    margin-bottom: 30px;
+}
+
+.thenVote--text {
     display: flex;
     flex-direction: column;
-    text-align: right;
-    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
 }
 
-.month__percentage {
-    font-weight: 700;
-    margin-bottom: 2px;
+.thenVote--text-span {
+    padding: 10px;
+    background-color: var(--Grey);
+    border-radius: 20px;
+    color: var(--Orange);
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.thenVote--text h2 { 
+   margin-bottom: 15px;
+   font-size: 25px;
+   letter-spacing: 1px;
 }
 
-.month__text {
-    color: var(--Mediumbrown);
+.thenVote--text p{
+    font-size: 15px;
+    color: var(--LightGrey);
+    line-height: 1.5;
 }
 
+.box--hide .box__img, .box--hide .box__inputs, .box--hide .box__text,
+.box--hide .box__button {
+    display: none
+}
+
+.box--hide .box__thenVote {
+    display: flex;
+}
+
+
+.attribution { 
+    position: absolute;
+    bottom: 20px;
+    color: var(--White);
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--Orange);
+}

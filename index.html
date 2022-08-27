@@ -1,54 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="normalize.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script defer src="script.js"></script>
-  <title>Frontend Mentor | Expenses chart component</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-</head>
-<body>
+    <link rel="icon"type="image/png"sizes="32x32"href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <script defer src="script.js"></script>
 
-  <section class="box">
-    <div class="balance">
-      <div class="balance__total">
-        <p class="balance__text">My balance</p>
-        <p class="balance__amount">$921.48</p>
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <section id="box" class="box ">
+      <div class="box__img">
+        <img src="images/icon-star.svg" alt="" />
       </div>
-      <div class="balance__logo"><img src="images/logo.svg" alt="logo"></div>
-    </div>
-    <div class="chart__box">
 
-      <div class="chart__tittle"><h2>Spending - Last 7 days</h2></div>
-      <div class="chart">
-        <canvas id="Chart"></canvas>
+      <div class="box__text">
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
       </div>
-      
-      <div class="total">
-        <div class="total__amount">
-          <p class="total__text">Total this month</p>
-          <p class="total__money">$478.33</p>
+      <form id="form">
+        <div class="box__inputs">
+          <div class="placeholder">
+            <label for="radio1" name="radio1" class="label">1</label>
+            <input type="radio" name="button" class="inputs" id="radio1" />
+          </div>
+
+          <div class="placeholder">
+            <label for="radio2" name="radio2" class="label">2</label>
+            <input type="radio" name="button" class="inputs" id="radio2" />
+          </div>
+          <div class="placeholder">
+            <label for="radio3" name="radio3" class="label">3</label>
+            <input type="radio" name="button" class="inputs" id="radio3" />
+          </div>
+          <div class="placeholder">
+            <label for="radio4" name="radio4" class="label">4</label>
+            <input type="radio" name="button" class="inputs" id="radio4" />
+          </div>
+          <div class="placeholder">
+            <label for="radio5" name="radio5" class="label">5</label>
+            <input type="radio" name="button" class="inputs" id="radio5" />
+          </div>
         </div>
-        <div class="month">
-          <p class="month__percentage">+2.4%</p>
-          <p class="month__text">from last month</p>
+
+        <div class="box__button">
+          <button id="button">SUBMIT</button>
         </div>
-      </div>
+
+        <div class="box__thenVote">
+          <div class="thenVote--img">
+            <img src="images/illustration-thank-you.svg" alt="" />
+          </div>
+
+          <div class="thenVote--text">
+            <div class="thenVote--text-span">
+              <span id="text"></span>
+            </div>
+            <h2>Thank you!</h2>
+            
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </form>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Reddsito">Enrique Querini</a>.
     </div>
-
-  </section>
- 
-
-
-
-
-
-
-  
-</body>
+  </body>
 </html>
