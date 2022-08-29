@@ -9,25 +9,19 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Primary
-
-- Orange: hsl(25, 97%, 53%)
-
 ### Neutral
 
-- White: hsl(0, 0%, 100%)
-- Light Grey: hsl(217, 12%, 63%)
-- Medium Grey: hsl(216, 12%, 54%)
-- Dark Blue: hsl(213, 19%, 18%)
-- Very Dark Blue: hsl(216, 12%, 8%)
+--AlmostWhite: hsl(0, 0%, 98%)
+--MediumGray: hsl(0, 0%, 41%)
+--AlmostBlack: hsl(0, 0%, 8%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 15px
+- Font size (paragraph): 18px
 
 ### Font
 
-- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
-- Weights: 400, 700
+- Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
+- Weights: 500, 700

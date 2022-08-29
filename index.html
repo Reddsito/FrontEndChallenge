@@ -1,86 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-    <link rel="icon"type="image/png"sizes="32x32"href="./images/favicon-32x32.png"/>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css" />
-    <script defer src="script.js"></script>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="normalize.css" />
+        <script defer src="script.js"></script>
 
-    <title>Frontend Mentor | Interactive rating component</title>
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
-  </head>
-  <body>
-    <section id="box" class="box ">
-      <div class="box__img">
-        <img src="images/icon-star.svg" alt="" />
-      </div>
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <img src="images/logo.svg" alt="" />
+                </div>
+                <div class="nav__box">
+                    <ul class="nav__menu">
+                        <div class="equis">
+                            <img class="menu_equis" src="images/icon-close-menu.svg" alt="">
+                        </div>
+                       
+                        <li class="menu-li">
+                            <div class="features menu-box">
+                                <a class="menu-link" href="#">Features</a>
+                                <img class="menu-arrow" src="images/icon-arrow-down.svg" alt="" />
+                            </div>
+    
+                            <ul class="submenu submenu-features">
+                                <li class="submenu-li">
+                                    <div class="submenu-box ">
+                                        <img class="submenu-box submenu-img" src="images/icon-todo.svg" alt="" />
+                                        <a  class="submenu-link" href="#">Todo List</a>
+                                    </div>
+                                </li>
+                                <li class="submenu-li">
+                                    <div class="submenu-box submenu-features">
+                                        <img class="submenu-img" src="images/icon-calendar.svg" alt="" />
+                                        <a class="submenu-link" href="#">Calendar</a>
+                                    </div>
+                                </li>
+                                <li class="submenu-li">
+                                    <div class="submenu-box submenu-features">
+                                        <img class="submenu-img" src="images/icon-reminders.svg" alt="" />
+                                        <a class="submenu-link" href="#">Reminders</a>
+                                    </div>
+                                </li>
+                                <li class="submenu-li">
+                                    <div class="submenu-box submenu-features">
+                                        <img class="submenu-img" src="images/icon-planning.svg" alt="" />
+                                        <a class="submenu-link" href="#">Planning</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="menu-li">
+                            <div class="company menu-box">
+                                <a href="#" class="menu-link">Company</a>
+                                <img class="menu-arrow" src="images/icon-arrow-down.svg" alt="" />
+                            </div>
+                            
+    
+                            <ul class="submenu">
+                                <li class="submenu-li">
+                                    <div class="submenu-company">
+                                        <a class="submenu-link" href="#">History</a>
+                                    </div>
+                                </li>
+                                <li class="submenu-li">
+                                    <div class="submenu-company">
+                                        <a class="submenu-link" href="#">Our Team</a>
+                                    </div>
+                                </li>
+                                <li class="submenu-li">
+                                    <div class="submenu-company">
+                                        <a class="submenu-link" href="#">Blog</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="menu-li">
+                            <div class="menu-careers menu-box">
+                                <a class="menu-link" href="#">Careers</a>
+                            </div>
+                        </li>
+    
+                        <li class="menu-li">
+                            <div class="menu-careers menu-box">
+                                <a class="menu-link" href="#">About</a>
+                            </div>
+                        </li>
+    
+                    </ul>
+                    <div class="nav__registration">
+                        <div class="login">
+                            <a class="login-link" href="#">Login</a>
+                        </div>
+                        <div class="register">
+                            <a class="register-link" href="#">Register</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav__bar">
+                    <img src="images/icon-menu.svg" alt="">
+                </div>
+            </nav>
 
-      <div class="box__text">
-        <h2>How did we do?</h2>
-        <p>
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-      </div>
-      <form id="form">
-        <div class="box__inputs">
-          <div class="placeholder">
-            <label for="radio1" name="radio1" class="label">1</label>
-            <input type="radio" name="button" class="inputs" id="radio1" />
-          </div>
+           
+        </header>
 
-          <div class="placeholder">
-            <label for="radio2" name="radio2" class="label">2</label>
-            <input type="radio" name="button" class="inputs" id="radio2" />
-          </div>
-          <div class="placeholder">
-            <label for="radio3" name="radio3" class="label">3</label>
-            <input type="radio" name="button" class="inputs" id="radio3" />
-          </div>
-          <div class="placeholder">
-            <label for="radio4" name="radio4" class="label">4</label>
-            <input type="radio" name="button" class="inputs" id="radio4" />
-          </div>
-          <div class="placeholder">
-            <label for="radio5" name="radio5" class="label">5</label>
-            <input type="radio" name="button" class="inputs" id="radio5" />
-          </div>
-        </div>
+        <main class="main">
+            <section class="main__box">
+                <img class="main__box-image" src="images/image-hero-desktop.png" alt="">
+            </section>
 
-        <div class="box__button">
-          <button id="button">SUBMIT</button>
-        </div>
+            <section class="main__text">
+                <h2>Make remote work</h2>
 
-        <div class="box__thenVote">
-          <div class="thenVote--img">
-            <img src="images/illustration-thank-you.svg" alt="" />
-          </div>
+                <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar. Learn more</p>
 
-          <div class="thenVote--text">
-            <div class="thenVote--text-span">
-              <span id="text"></span>
-            </div>
-            <h2>Thank you!</h2>
-            
-            <p>
-              We appreciate you taking the time to give a rating. If you ever
-              need more support, don’t hesitate to get in touch!
-            </p>
-          </div>
-        </div>
-      </form>
-    </section>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/Reddsito">Enrique Querini</a>.
-    </div>
-  </body>
+                <button class="button">Learn more</button>
+               
+                <div class="bottom">
+                    <img src="images/client-databiz.svg" alt="">
+                    <img src="images/client-audiophile.svg" alt="">
+                    <img src="images/client-meet.svg" alt="">
+                    <img src="images/client-maker.svg" alt="">
+                </div>
+            </section>
+
+        </main>
+
+        <!-- <div class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            . Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+    </body>
 </html>
