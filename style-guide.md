@@ -9,19 +9,23 @@ The designs were created to the following widths:
 
 ## Colors
 
+### Primary
+
+-Moderate cyan: hsl(176, 50%, 47%)
+-Dark cyan: hsl(176, 72%, 28%)
+
 ### Neutral
 
---AlmostWhite: hsl(0, 0%, 98%)
---MediumGray: hsl(0, 0%, 41%)
---AlmostBlack: hsl(0, 0%, 8%)
+-Black: hsl(0, 0%, 0%)
+-Dark gray: hsl(0, 0%, 48%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 18px
+- Font size: 16px
 
 ### Font
 
-- Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
-- Weights: 500, 700
+- Family: [Commissioner](https://fonts.google.com/specimen/Commissioner)
+- Weights: 400, 500, 700
