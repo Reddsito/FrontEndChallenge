@@ -31,7 +31,7 @@ operators.forEach(o => {
     })
 })
 
-range.addEventListener('click', (e) => {
+range.addEventListener('change', (e) => {
     if(e.target.value == 1) {
         body.className = '';
     } else if (e.target.value == 2 ) {
