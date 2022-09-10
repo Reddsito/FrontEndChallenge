@@ -38,7 +38,7 @@ class Display{
     }
 
     calculate(operator, value) {
-        if(this.operator != '=' && this.valueActual != '') {
+        if(this.operator != '=' && this.valueActual != '' && this.valueActual != '.') {
             this.result();
             this.valuePrevious = this.valueActual;
         }
@@ -54,7 +54,6 @@ class Display{
         if(isNaN(a) || isNaN(b)) {
             return
         } else {
-            console.log('trabajó')
            this.valueActual = this.Calculator[this.value](a,b);
         }
     }
